@@ -26,15 +26,41 @@
   <div class="tab-content">
     <div id="Home" class="tab-pane fade in active">
       <h3>General games</h3>
-      <iframe src="https://ubyis.org"style="width:1300px; height:700px;overflow:auto;"></iframe>
+        <button onclick="openFullscreen();">Open in Fullscreen Mode</button> 
+      <iframe src="https://ubyis.org"style="width:1300px; height:700px;overflow:auto;"controls id="ubyis"></iframe>
+                  <script>
+var elem = document.getElementById("ubyis");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Freezenova</h3>
-      <iframe src="https://evolution.biologycontest.com/assets/activities/biology.html"style="width:1300px; height:700px;overflow:auto;"></iframe>
+        <button onclick="openFullscreen();">Open in Fullscreen Mode</button> 
+      <iframe src="https://evolution.biologycontest.com/assets/activities/biology.html"style="width:1300px; height:700px;overflow:auto;"controls id="freezenova"></iframe>
+                  <script>
+var elem = document.getElementById("freezenova");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
     </div>
       <div id="menu3" class="tab-pane fade in active">
     <h3>Mac VG</h3>
-         <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button> 
+         <button onclick="openFullscreen();">Open in Fullscreen Mode</button> 
     <iframe src="https://macvgggg.github.io/macvg/"style="width:1300px; height:700px;overflow:auto;" controls id="macvg"></iframe>  
           <script>
 var elem = document.getElementById("macvg");
