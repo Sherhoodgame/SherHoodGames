@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
     <title>Dashboard </title>
     <link rel="icon" type="image/png" href="favicon.ico">
       <meta charset="utf-8">
@@ -26,7 +40,7 @@
   <div class="tab-content">
     <div id="Home" class="tab-pane fade in active">
       <h3>Ubyis</h3>
-        <button onclick="openFullscreenubyis();">Open in Fullscreen Mode</button> 
+        <button onclick="openFullscreenubyis();"class="button">Open in Fullscreen Mode</button> 
       <iframe src="https://ubyis.org"style="width:1300px; height:700px;overflow:auto;"controls id="ubyis"></iframe>
                   <script>
 function openFullscreenubyis() {
@@ -43,7 +57,7 @@ function openFullscreenubyis() {
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Freezenova</h3>
-        <button onclick="openFullscreenfreezenova();">Open in Fullscreen Mode</button> 
+        <button onclick="openFullscreenfreezenova();"class="button">Open in Fullscreen Mode</button> 
       <iframe src="https://evolution.biologycontest.com/assets/activities/biology.html"style="width:1300px; height:700px;overflow:auto;"controls id="freezenova"></iframe>
                   <script>
 function openFullscreenfreezenova() {
@@ -60,7 +74,7 @@ function openFullscreenfreezenova() {
     </div>
       <div id="menu3" class="tab-pane fade in active">
     <h3>Mac VG</h3>
-         <button onclick="openFullscreenmacvg();">Open in Fullscreen Mode</button> 
+         <button onclick="openFullscreenmacvg();"class="button">Open in Fullscreen Mode</button> 
     <iframe src="https://macvgggg.github.io/macvg/"style="width:1300px; height:700px;overflow:auto;" controls id="macvg"></iframe>  
           <script>
 function openFullscreenmacvg() {
